@@ -1,5 +1,5 @@
 /* title */
-var message=new Array();message[0]="decent name";message[1]="HIRE THIS MAN";message[2]="he's kind of weird";message[3]="HI MOM";message[4]="russrizzo.net";message[4]="russrizzo.net";var reps=2;var speed=100;var p=message.length;var T="";var C=0;var mC=0;var s=0;var sT=null;if(reps<1)reps=1;function doTheThing(){T=message[mC];A();}
+var message=new Array();message[0]="russ rizzo";message[1]="that's a decent name";message[2]="he's not a buffalo";message[3]="but he's from buffalo";message[4]="you're on russrizzo.net";message[5]="thanks for being here";message[6]="bliss and luck to you";message[7]="have a great day";message[8]="- russ";var reps=2;var speed=100;var p=message.length;var T="";var C=0;var mC=0;var s=0;var sT=null;if(reps<1)reps=1;function doTheThing(){T=message[mC];A();}
 function A(){s++;if(s>8){s=1;}
 if(s==1){document.title=''+T+'';}
 if(s==2){document.title=''+T+'';}
