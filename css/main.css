@@ -42,6 +42,12 @@ a:hover {
     text-decoration: none;
 }
 
+nav.main-nav .active {
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+}
+
 h1 {
     font-size: 36px;
     font-weight: 700;
@@ -173,7 +179,6 @@ h6 {
 
 #carly {
     position: relative;
-    padding: 10em 10em 0 10em;
 }
 
 #number {
