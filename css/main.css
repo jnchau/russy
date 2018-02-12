@@ -118,10 +118,10 @@ h6 {
   line-height: 230%;
   padding-top: 0em;
   z-index: 2;
-}
+}/*
 .mobile-credit {
     grid-area: footer;
-}
+}*/
 .avatar {
     grid-area: avatar;
     padding: 2em 0 2em 0;
@@ -197,7 +197,7 @@ h6 {
     grid-template-areas: 
       "header  nav"
       "content content"
-      "mobile-credit mobile-credit";
+      "credit credit";
     border: none;
   }
   nav ul {
@@ -266,7 +266,10 @@ h5 {
     left: 15%;;
   }
   .credit {
-      visibility: hidden;
+    margin-top: 135em;
+    position: relative;
+    left: -150%;
+    width: 100%;
   }
 
 }
