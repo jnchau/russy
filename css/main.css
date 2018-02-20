@@ -250,6 +250,7 @@ h4 {
     font-weight: 400;
     font-family: "Cardo", serif;
     letter-spacing: 2px;
+    margin: 1em 0 1em 0;
 }  
 
 h5 {
@@ -258,6 +259,7 @@ h5 {
     font-family: "Cardo", serif;
     letter-spacing: 1px;
     line-height: 1.5;
+    margin: 0.25em;
 } 
 
   #carly {
@@ -270,11 +272,28 @@ h5 {
     left: 15%;;
   }
   .credit {
-    margin-top: 135em;
+    margin-top: 388em;
     position: relative;
     left: -150%;
     width: 100%;
   }
+
+  .project-item {
+      display: grid;
+  }
+
+  .project-item :nth-child(2) {
+      padding: 0;
+  }
+  .project-item > div:nth-child(3) {
+      margin-left: initial;
+  }
+
+  .responsive {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
 
 }
 
