@@ -21,3 +21,9 @@ doTheThing();
         }).mouseleave(function() {
             $("#franny a span").fadeOut();
         });
+
+
+document.addEventListener('touchstart', function addtouchclass(e){ // first time user touches the screen
+    document.documentElement.classList.add('is-touch') // add "can-touch" class to document root using classList API
+    document.removeEventListener('touchstart', addtouchclass, false) // de-register touchstart event
+}, false)

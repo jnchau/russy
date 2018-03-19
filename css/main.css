@@ -109,6 +109,12 @@ h6 {
     transform: rotate(270deg);
     height: 290px;
     width: 218px;
+
+}
+
+header.main-head a {
+    text-decoration: none;
+    color: #000;
 }
 
 .credit {
@@ -222,6 +228,10 @@ h6 {
     border-style: none;
   }
 
+  html.can-touch a:hover{
+    background: none; /* disable hover effect on touch devices */
+}
+
 /* MOBILE AND TABLET RESPONSE AND ORDERING */
 @media screen and (max-width: 450px) {
   .wrapper {
@@ -321,7 +331,17 @@ h5 {
     height: auto;
 }
 
+    .project-item > div > h3 {
+        margin: 0;
+        margin-top: 1em;
+    }
+
+    .project-item > div > h4 {
+        margin: 0;
+        margin-bottom: 1em;
+    }
 }
+ }
 
 @media (min-width: 700px) {
   .wrapper {
