@@ -14,8 +14,8 @@
 html, body {
     box-sizing: border-box;
     height: 100%;
-    margin: 0px;
-    font-family: "Cousine", monospace;
+    margin: 2px;
+    font-family: 'Tajawal', sans-serif;
     cursor: url('../img/cursors/arrow.png'), auto;	
     }
 
@@ -23,8 +23,8 @@ li {
     list-style-type: none;
     font-size: 18px;
     font-weight: 400;
-    font-family: "Cardo", serif;
-    letter-spacing: 2px;
+    font-family: 'Tajawal', sans-serif;
+    letter-spacing: 1px;
 }
 
 a:link {
@@ -38,15 +38,15 @@ a:visited {
 }
 
 a:hover {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fef56a;
     text-decoration: none;
     cursor: url('../img/cursors/hand.png'),auto;
 }
 
 nav.main-nav .active {
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #fef56a;
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ h1 {
 h2 {
     font-size: 22px;
     font-weight: 400;
-    font-family: "Cardo", serif;
+    font-family: 'Tajawal', sans-serif;
     letter-spacing: 5.2px;
 }
 
@@ -67,24 +67,20 @@ h3 {
     font-size: 20px;
     font-weight: 700;
     font-family: "Cousine", monospace;
-    letter-spacing: 2px;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    font-family: "Cardo", serif;
-    letter-spacing: 2px;
+    font-family: 'Tajawal', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }  
 
 h5 {
     font-size: 15px;
     font-weight: 400;
-    font-family: "Cardo", serif;
-    letter-spacing: 2px;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: "Cardo", serif;
+    font-family: 'Tajawal', sans-serif;
     letter-spacing: 1px;
     line-height: 1.5;
 } 
@@ -92,8 +88,8 @@ h5 {
 h6 {
     font-size: 10px;
     font-weight: 400;
-    font-family: "Cardo", serif;
-    letter-spacing: 1.2px;
+    font-family: 'Tajawal', sans-serif;
+    letter-spacing: 1px;
     line-height: 1.5;
 }  
 
@@ -109,12 +105,6 @@ h6 {
     transform: rotate(270deg);
     height: 290px;
     width: 218px;
-
-}
-
-header.main-head a {
-    text-decoration: none;
-    color: #000;
 }
 
 .credit {
@@ -130,10 +120,8 @@ header.main-head a {
   line-height: 230%;
   padding-top: 0em;
   z-index: 2;
-}/*
-.mobile-credit {
-    grid-area: footer;
-}*/
+}
+
 .avatar {
     grid-area: avatar;
     padding: 2em 0 2em 0;
@@ -228,10 +216,7 @@ header.main-head a {
     border-style: none;
   }
 
-  html.can-touch a:hover{
-    background: none; /* disable hover effect on touch devices */
-}
-
+  
 /* MOBILE AND TABLET RESPONSE AND ORDERING */
 @media screen and (max-width: 450px) {
   .wrapper {
@@ -260,7 +245,7 @@ h1 {
 h2 {
     font-size: 22px;
     font-weight: 600;
-    font-family: "Cardo", serif;
+    font-family: 'Tajawal', sans-serif;
     letter-spacing: 5.2px;
 }
 
@@ -271,6 +256,7 @@ h2 {
     width: 260px;
     padding-top: 20%;
 }
+
   .graybox {
     grid-column: 1 / -1;
     padding: 0 2em 0 2em;
@@ -286,15 +272,15 @@ h3 {
 h4 {
     font-size: 18px;
     font-weight: 400;
-    font-family: "Cardo", serif;
-    letter-spacing: 2px;
+    font-family: 'Tajawal', sans-serif;
+    letter-spacing: 1px;
     margin: 1em 0 1em 0;
 }  
 
 h5 {
     font-size: 10px;
     font-weight: 400;
-    font-family: "Cardo", serif;
+    font-family: 'Tajawal', sans-serif;
     letter-spacing: 1px;
     line-height: 1.5;
     margin: 0.25em;
@@ -329,19 +315,19 @@ h5 {
     width: auto;
     max-width: 100%;
     height: auto;
-}
+  }
+  
+  .project-item > div > h3 {
+    margin: 0;
+    margin-top: 1em;
+  }
 
-    .project-item > div > h3 {
-        margin: 0;
-        margin-top: 1em;
-    }
+  .project-item > div > h4 {
+    margin: 0;
+    margin-bottom: 1em;
+  }
 
-    .project-item > div > h4 {
-        margin: 0;
-        margin-bottom: 1em;
-    }
 }
- }
 
 @media (min-width: 700px) {
   .wrapper {
@@ -359,18 +345,30 @@ h5 {
    }
 }
 
-/* STYLES: MOST IMPORTANT IS THE SPAN SET TO POSITION:ABSOLUTE AND Z-INDEX IF YOU WANT IT BEHIND THE TEXT */
-    #franny {
+/* yellow hover effect on links */
+    .franny {
         color:#000;
     }
 
-    #franny a {
+    .franny a {
         color:#000;
         text-decoration: none;
     }
 
-    #franny a span {
-        position:absolute;
-        z-index:-99;
+    .franny a:hover {
+        background-color:#fef56a;
+        display: list-item;
+        list-style-type: none;
     }
-
+    
+/* because there's no 1px border-bottom for the last box, mr. walker has to be different*/
+    #walker-hover a {
+        color:#000;
+        text-decoration: none;
+    }
+    #walker-hover a:hover {
+        background-color:#fef56a;
+        display: list-item;
+        list-style-type: none;
+        border-bottom: 1px #000 solid;
+    }
